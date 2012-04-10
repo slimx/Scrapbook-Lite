@@ -9,7 +9,6 @@ var sbUrlBarStatusListener = {
 
     onLocationChange: function(aProgress, aRequest, aURI) {
         //todo 检查当前页面是否是在资料库中
-       ScrapBookUtils.log(1)
         sbContext.updateStatus();
         sbUrlBarStatus.processNewURL(aURI);
 
