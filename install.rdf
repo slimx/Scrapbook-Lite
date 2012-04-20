@@ -10,7 +10,7 @@
     <em:creator>slimx</em:creator>
     <em:type>2</em:type> <!-- type=extension --> 
 	<em:unpack>false</em:unpack>
-	<!--<em:updateURL>http://xinji.zhongjia.net.cn/storage/update.rdf</em:updateURL>-->
+	<em:updateURL>https://commondatastorage.googleapis.com/slimx_extension/scrapbook.rdf</em:updateURL>
     
     <!-- Firefox -->
     <em:targetApplication>
