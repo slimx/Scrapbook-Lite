@@ -5,7 +5,7 @@ var sbContext = {
         let aNodes = ct._view.selectedNodes;
         if(aNodes.length==1)
         {
-            let window = PlacesUIUtils._getWindow(ct._view);
+            let window = ct._view.ownerWindow;
             let aWhere = window.whereToOpenLink(event);
             window.openUILinkIn(aNodes[0].uri, aWhere, {
                 inBackground: Services.prefs.getBoolPref("browser.tabs.loadBookmarksInBackground")
@@ -13,7 +13,7 @@ var sbContext = {
 
         }else
         {
-        let window = PlacesUIUtils._getWindow(ct._view);
+        let window = ct._view.ownerWindow;
         let urlsToOpen = [];
         for (var i = 0; i < aNodes.length; i++) {
             if (PlacesUtils.nodeIsURI(aNodes[i]))

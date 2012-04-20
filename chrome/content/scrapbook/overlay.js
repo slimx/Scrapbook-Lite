@@ -146,7 +146,7 @@ var ScrapBookBrowserOverlay = {
         //批量选中的 open all
         var addFunction3 = function(aNodes, aEvent, aView)
         {
-            let window = this._getWindow(aView);
+            let window = aView.ownerWindow;
             let urlsToOpen = [];
             for (var i = 0; i < aNodes.length; i++) {
                 let aItemId = aNodes[i].itemId;
